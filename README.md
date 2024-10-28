@@ -15,7 +15,7 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
 
 
 ```yaml
-- pipe: .../aws-taskdefinition-image-updater:0.0.1
+- pipe: ghcr.io/io-veeblefetzer/aws-taskdefinition-image-updater:<latest tag>
   variables:
     AWS_ACCESS_KEY_ID: '<string>' # Mandatory
     AWS_SECRET_ACCESS_KEY: '<string>' # Mandatory
@@ -23,3 +23,5 @@ Add the following snippet to the script section of your `bitbucket-pipelines.yml
     IMAGE: '<string>' # Mandatory image:tag combination
     TASK_DEFINITION_NAME: '<string>' # Mandatory: the name of the taskdefinition to update
 ```
+
+Check the packages for the latest tag...
